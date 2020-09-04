@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import { Link } from "react-router-dom";
 import { Avatar } from "antd";
 const navLinks = [
@@ -23,6 +23,15 @@ const navLinks = [
 export default function Navigation({ user }) {
   const [menuActive, setMenuActive] = useState(false);
 
+    const screenClickedRef = useRef(false);
+
+    useEffect(() => {
+      document.addEventListener("click", () => {
+        screenClickedRef.current = !screenClickedRef.current;
+        setMenuActive(screenClickedRef.current);
+      });
+    }, []);
+  
   return (
     <nav className="site-navigation">
       <Link to="/" className="logo">

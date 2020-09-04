@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect, useRef} from 'react';
 import Navigation from './components/Navigation';
 import {BrowserRouter,Switch,Route,Redirect} from 'react-router-dom';
 import PageRenderer from './PageRenderer'
@@ -8,10 +8,13 @@ function App() {
     firstName:'Robert',
     lastName:'Coder'
   }
+
+
+ 
   return (
     <BrowserRouter>
       <div className="App">
-        <Navigation user={user} />
+        <Navigation user={user}  />
         <Switch>
           <Route path="/:page" component={PageRenderer} />
           <Route path="/" render={()=><Redirect to="/home"/>} />
