@@ -10,13 +10,9 @@ const generatePage = (page) =>{
         
     } catch(e) {
         console.warn(e);
-
         return React.createElement(()=>404)
-        
     }
 }
-
-
  export default function PageRenderer() {
 
     const {

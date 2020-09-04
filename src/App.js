@@ -16,7 +16,7 @@ function App() {
       <div className="App">
         <Navigation user={user}  />
         <Switch>
-          <Route path="/:page" component={PageRenderer} className="page"/>
+          <Route path="/:page" component={PageRenderer}/>
           <Route path="/" render={()=><Redirect to="/home"/>} />
           <Route component = {()=>404}/>
         </Switch>
