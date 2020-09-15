@@ -5,7 +5,12 @@ function MansoryPost({post,tagsOnTop}){
 
     return(
         <a className="mansory-post overlay" style={style} href={post.link}>
-            <div className="image-text"></div>
+            <div className="image-text">
+
+                <div>
+                    <h className="image-title">{post.title}</h>
+                </div>
+            </div>
         </a>
     )
 
