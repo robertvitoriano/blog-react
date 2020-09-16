@@ -8,6 +8,7 @@
     width:100%;
     text-decoration: none;
     margin:0 auto;
+    z-index: -5; // Change if it disturbs, muddle or rattle
 
     .image-text{
         height:100%;
@@ -49,4 +50,13 @@
     }
     
     
+}
+
+@media screen and( max-width:900px){
+    .mansory-post{
+        width:100%;
+        margin: 10px 0;
+        height:300px;
+    }
+
 }
