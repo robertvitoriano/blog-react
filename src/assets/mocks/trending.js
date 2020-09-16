@@ -18,29 +18,23 @@ export default [
   {
     title: "Brain Hacks for learning to program",
     date: moment().format("MMMM DD, YYYY"),
-    categories: ["Tech Culture", "Tech News"],
+    categories: ["Javascript", "Tech News"],
     link: "#",
     image: "anyone_can_code.jpg",
   },
   {
     title: "Can Anyone Code ?",
     date: moment().format("MMMM DD, YYYY"),
-    categories: ["Tech Culture", "Tech News"],
+    categories: ["Tech Culture", "Vue"],
     link: "#",
     image: "anyone_can_code.jpg",
   },
   {
     title: "Can Anyone Code ?",
     date: moment().format("MMMM DD, YYYY"),
-    categories: ["Tech Culture", "Tech News"],
+    categories: ["Tech Culture", "React"],
     link: "#",
     image: "anyone_can_code.jpg",
   },
-  {
-    title: "Can Anyone Code ?",
-    date: moment().format("MMMM DD, YYYY"),
-    categories: ["Tech Culture", "Tech News"],
-    link: "#",
-    image: "anyone_can_code.jpg",
-  },
+
 ];

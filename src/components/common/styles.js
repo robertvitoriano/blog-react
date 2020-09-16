@@ -7,3 +7,7 @@ const categoryColors = {
     Javascript:'rgb(255,179,64)',
     Cloud:'rgb(175,82,250)'
 }
+
+export  {
+    categoryColors
+}

@@ -1,8 +1,10 @@
 import React from 'react';
-import categoryColors from './styles'
+import {categoryColors} from './styles'
 
 function MansoryPost({post,tagsOnTop}){
-    const style  = {backgroundImage:`url("${require(`../../assets/img/${post.image}`)}")`} 
+    const imageBackground  = {backgroundImage:`url("${require(`../../assets/img/${post.image}`)}")`} 
+
+    const style = {...imageBackground, ...post.style}
 
     return(
         <a className="mansory-post overlay" style={style} href={post.link}>
@@ -15,7 +17,7 @@ function MansoryPost({post,tagsOnTop}){
              </div>
                 <div>
                     <h2 className="image-title">{post.title}</h2>
-    <span className="iamge-date">{post.date}</span>
+    <span className="image-date">{post.date}</span>
 
                 </div>
             </div>
